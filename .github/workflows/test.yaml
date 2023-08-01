@@ -1,0 +1,11 @@
+on:
+  push:
+
+jobs:
+  test:
+    runs-on: macos-latest
+    steps:
+      - name: Brew
+        run: |
+          brew info
+          brew install smashedr/keg/smashtest
