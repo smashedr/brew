@@ -5,7 +5,14 @@ jobs:
   test:
     runs-on: macos-latest
     steps:
-      - name: Brew
+      - name: smash-test
+        run: |
+          brew info
+          brew install smashedr/keg/smash-test
+          smash-test.sh
+
+      - name: macls
         run: |
           brew info
           brew install smashedr/keg/macls
+          macls
