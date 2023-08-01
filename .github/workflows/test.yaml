@@ -8,4 +8,4 @@ jobs:
       - name: Brew
         run: |
           brew info
-          brew install smashedr/keg/smashtest
+          brew install smashedr/keg/macls
